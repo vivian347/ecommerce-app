@@ -1,0 +1,85 @@
+<header class="header-upper py-3">
+    <div class="container-xxl">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <h3><a class="text-dark" routerLink="/">Modernrush .</a></h3>
+            </div>
+            <div class="col-5">
+                <div class="input-group mb-0">
+                    <input type="text" class="form-control py-2" placeholder="Search..." aria-label="Search..."
+                        aria-describedby="basic-addon2" />
+                    <span class="input-group-text p-1" id="basic-addon2"><mat-icon class="fs-3">search</mat-icon></span>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="header-upper-links d-flex align-items-center justify-content-between">
+                    <div>
+                        <a [routerLink]="['/']" class="d-flex text-dark align-items-center gap-10">
+                            <mat-icon class="m-3">loop</mat-icon>
+                            <p class="mb-0">Compare <br /> Products</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a [routerLink]="['/']" class="d-flex text-dark align-items-center gap-10">
+                            <mat-icon class="m-3">favorite_border</mat-icon>
+                            <p class="mb-0">Favorite <br> Wishlist</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a [routerLink]="['/']" class="d-flex text-dark align-items-center gap-10">
+                            <mat-icon class="m-3">person_outline</mat-icon>
+                            <p class="mb-0">Login <br /> My Account</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a [routerLink]="['/']" class="d-flex text-dark align-items-center gap-10">
+                            <img src="../../../assets/images/cart.svg" alt="Cart">
+                            <div class="d-flex flex-column">
+                                <span class="badge bg-beige text-dark">0</span>
+                                <p class="mb-0">$ 500</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header-bottom py-3">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-12">
+                <div class="menu-buttom d-flex align-items-center gap-30">
+                    <div>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-secondary dropdown-toggle  bg-transparent gap-10 d-flex align-items-center"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../../assets/images/menu.svg" alt="categories">
+                                <span class="me-5 d-inline-block">Shop
+                                    Categories</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" routerLink="#">Action</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" routerLink="#">Another action</a></li>
+                                <hr>
+
+                                <li><a class="dropdown-item" routerLink="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="menu-links">
+                        <div class="d-flex align-items-center gap-15">
+                            <a [routerLink]="['/']" class="text-dark">Home</a>
+                            <a [routerLink]="['/shop']" class="text-dark">Shop</a>
+                            <a [routerLink]="['/contact']" class="text-dark">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
